@@ -3,4 +3,28 @@ extends ./layout/index
 block contenido 
     main.container.mt-5
         .row
-            h1 #{pagina}
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fuga laboriosam cumque quaerat dolore tempore saepe? Perferendis debitis nihil quibusdam delectus qui asperiores nulla impedit ducimus, ratione fugiat exercitationem natus.
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fuga laboriosam cumque quaerat dolore tempore saepe? Perferendis debitis nihil quibusdam delectus qui asperiores nulla impedit ducimus, ratione fugiat exercitationem natus.
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti fuga laboriosam cumque quaerat dolore tempore saepe? Perferendis debitis nihil quibusdam delectus qui asperiores nulla impedit ducimus, ratione fugiat exercitationem natus.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center 
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolor magnam. Aperiam modi.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolor magnam. Aperiam modi.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Precios Únicos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolor magnam. Aperiam modi.                                        
