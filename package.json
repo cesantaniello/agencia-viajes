@@ -1,0 +1,30 @@
+{
+  "name": "agencia-viajes",
+  "version": "1.0.0",
+  "description": "Agencia de Viajes con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesantaniello/agencia-viajes.git"
+  },
+  "keywords": [
+    "agencia-viajes",
+    "node",
+    "nodejs"
+  ],
+  "author": "Carlos Santaniello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesantaniello/agencia-viajes/issues"
+  },
+  "homepage": "https://github.com/cesantaniello/agencia-viajes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
