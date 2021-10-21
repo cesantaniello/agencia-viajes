@@ -1,8 +1,13 @@
 import express from 'express';
 import router from './routes/index.js';
+import db from './config/db.js';
 
 const app = express();
 
+//Conectar la BB. DD.
+db.authenticate()
+    .then(() => console.log('BB. DD. conectada'))
+    .catch(error => console.log(error))
 
 //Definir puerto
 const port = process.env.PORT || 4000;
