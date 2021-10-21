@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import Sequelize from "sequelize";
 import db from "../config/db.js";
 
 export const Viaje = db.define("viajes", {
