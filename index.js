@@ -1,6 +1,11 @@
 import express from 'express';
 import router from './routes/index.js';
 import db from './config/db.js';
+import bodyParser from 'body-parser';
+import path from 'path'
+
+import dotenv from 'dotenv';
+dotenv.config({path:"variables.env"});
 
 const app = express();
 
@@ -8,9 +13,6 @@ const app = express();
 db.authenticate()
     .then(() => console.log('BB. DD. conectada'))
     .catch(error => console.log(error))
-
-//Definir puerto
-const port = process.env.PORT || 4000;
 
 //Habilitar PUG
 app.set('view engine', 'pug');
@@ -32,6 +34,10 @@ app.use(express.static('public'))
 //Definir rutas
 app.use('/', router);
 
-app.listen(port, () => {
+/* Puerto y host para la app */
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3000;
+
+app.listen(port, host, () => {
     console.log(`Server is running on port ${port}`);
 });

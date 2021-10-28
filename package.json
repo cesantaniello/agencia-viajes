@@ -4,7 +4,8 @@
   "description": "Agencia de Viajes con NodeJS",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "type": "module",
   "repository": {
