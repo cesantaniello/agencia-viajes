@@ -2,6 +2,7 @@ import {Viaje} from '../models/Viaje.js';
 import {Testimonial} from '../models/Testimoniales.js';
 
 const paginaInicio = (req, res) => {
+    
     res.render('inicio', {
         pagina: 'Inicio',
         clase: 'home'
